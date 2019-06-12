@@ -1,13 +1,14 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
-function sayHello(name) {
-  var text = 'Hey there, my name is ' + name;
-  var say = function() { console.log(text); }
-  say();
+let greeter = () => {
+  let name = "Sam";
+  return function () {
+    return `Hello, ${name}`;
+  }
 }
-sayHello('Carla!');
-
+const newGreeter = greeter();
+console.log(newGreeter());
 
 
 

@@ -41,9 +41,8 @@ function last(arr, cb) {
   return cb(arr[arr.length-1]);
 }
 
-  //Function invocation
-  getLength (arr.length[-1], console.log);
-  
+  //Function invocations
+  last(items,console.log);  
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
