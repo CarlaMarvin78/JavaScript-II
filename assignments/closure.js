@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+let greeter = () => {
+  let name = "Sam";
+  return function () {
+    return `Hello, ${name}`;
+  }
+}
+const newGreeter = greeter();
+console.log(newGreeter());
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
